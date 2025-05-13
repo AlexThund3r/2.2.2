@@ -21,4 +21,9 @@ public class CarServiceImpl implements CarService {
     public List<Car> getCars(int count) {
         return count >= 5 ? cars : cars.subList(0, count);
     }
+
+    @Override
+    public List<Car> getAllCars() {
+        return cars;
+    }
 }
